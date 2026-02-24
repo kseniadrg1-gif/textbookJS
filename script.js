@@ -1,9 +1,9 @@
-"use strict";
+let value = prompt("Введите число", 0);
 
-let answer = prompt("Какое «официальное» название JavaScript?");
-
-if (answer === "ECMAScript") {
-  alert("Верно!");
+if (value > 0) {
+  alert(1);
+} else if (value < 0) {
+  alert(-1);
 } else {
-  alert("Не знаете? ECMAScript!");
+  alert(0);
 }
