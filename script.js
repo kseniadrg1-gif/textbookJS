@@ -1,1 +1,5 @@
-let result = a + b < 4 ? "мало" : "много";
+let num1 = 10,
+  num2 = 20,
+  result;
+
+result ??= num1 ?? num2;
