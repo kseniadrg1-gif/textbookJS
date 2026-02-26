@@ -1,5 +1,6 @@
-let i = 0;
-while (i < 3) {
-  alter(`number ${i}!`);
-  i++;
+let i = prompt("введите число, больше 100");
+while (i < 100) {
+  i = prompt("Введите ещё раз");
 }
+
+alert("Готово!");
