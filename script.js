@@ -1,5 +1,5 @@
-let num1 = 10,
-  num2 = 20,
-  result;
-
-result ??= num1 ?? num2;
+let i = 0;
+while (i < 3) {
+  alter(`number ${i}!`);
+  i++;
+}
