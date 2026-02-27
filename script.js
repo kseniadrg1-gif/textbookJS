@@ -1,11 +1,13 @@
-let n = 10;
-
-for (let i = 2; i <= n; i++) {
-  let prostoe = true;
-
-  for (let j = 2; j < i; j++) {
-    if (i % j === 0) prostoe = false;
-  }
-
-  if (prostoe) console.log(i);
+i = browser;
+if (i === "Edge") {
+  alert("You've got the Edge!");
+} else if (
+  i === "Chrome" ||
+  i === "Firefox" ||
+  i === "Safari" ||
+  i === "Opera"
+) {
+  alert("Okay we support these browsers too");
+} else {
+  alert("We hope that this page looks ok!");
 }
