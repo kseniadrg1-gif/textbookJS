@@ -1,7 +1,10 @@
-function min(a, b) {
-  if (a < b) {
-    return a;
-  } else {
-    return b;
-  }
+function ask(question, yes, no) {
+  if (confirm(question)) yes();
+  else no();
 }
+
+ask(
+  "Вы согласны?",
+  () => alert("Вы согласились."),
+  () => alert("Вы отменили выполнение."),
+);
