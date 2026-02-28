@@ -1,6 +1,21 @@
-function isEmpty(obj) {
-  for (let key in obj) {
-    return false;
-  }
-  return true;
-}
+let calculator = {
+  a: 0,
+  b: 0,
+
+  read() {
+    this.a = +prompt("Введите первое значение:", 0);
+    this.b = +prompt("Введите второе значение:", 0);
+  },
+
+  sum() {
+    return this.a + this.b;
+  },
+
+  mul() {
+    return this.a * this.b;
+  },
+};
+
+calculator.read();
+alert(calculator.sum());
+alert(calculator.mul());
