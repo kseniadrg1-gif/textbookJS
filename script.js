@@ -1,16 +1,5 @@
-function readNumber() {
-  let num;
-
-  do {
-    num = prompt("Введите число:", 0);
-
-    if (num === null || num === "") {
-      return null;
-    }
-  } while (isNaN(+num));
-
-  return +num;
+function checkSpam(str) {
+  return (
+    str.toLowerCase().includes("viagra") || str.toLowerCase().includes("xxx")
+  );
 }
-
-let value = readNumber();
-alert(`Вы ввели: ${value}`);
