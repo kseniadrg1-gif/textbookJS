@@ -1,20 +1,27 @@
-let styles = ["Джаз", "Блюз"];
+function sumInput() {
+  let numbers = []; // Создаем пустой массив для чисел
 
-console.log(styles);
+  while (true) {
+    // Бесконечный цикл
+    let value = prompt("Введите число", 0); // Запрашиваем значение
 
-styles.push("Рок-н-ролл");
+    // Проверяем, нужно ли остановить ввод
+    if (value === null || value === "" || isNaN(value)) {
+      break; // Выходим из цикла
+    }
 
-console.log(styles);
+    numbers.push(Number(value)); // Преобразуем в число и добавляем в массив
+  }
 
-let middleIndex = Math.floor(styles.length / 2);
-styles[middleIndex] = "Классика";
+  // Подсчитываем сумму
+  let sum = 0;
+  for (let num of numbers) {
+    sum += num;
+  }
 
-console.log(styles);
+  return sum; // Возвращаем сумму
+}
 
-let firstElement = styles.shift();
-console.log(firstElement);
-
-console.log(styles);
-
-styles.unshift("Рэп", "Регги");
-console.log(styles);
+// Вызов функции
+let result = sumInput();
+alert("Сумма: " + result);
