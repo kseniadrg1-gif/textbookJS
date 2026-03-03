@@ -1,12 +1,3 @@
-function camelize(str) {
-  return str
-    .split("-")
-    .map((word, index) => {
-      if (index === 0) {
-        return word;
-      } else {
-        return word.charAt(0).toUpperCase() + word.slice(1);
-      }
-    })
-    .join("");
+function unique(arr) {
+  return Array.from(new Set(arr));
 }
