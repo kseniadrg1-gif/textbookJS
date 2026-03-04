@@ -1,15 +1,8 @@
-function aclean(arr) {
-  let map = new Map();
-
-  for (let word of arr) {
-    // разбиваем слово на буквы, сортируем и объединяем снова в строку
-    let sorted = word.toLowerCase().split("").sort().join(""); // (*)
-    map.set(sorted, word);
+function sumSalaries(salaries) {
+  sum = 0;
+  let values = Object.values(salaries);
+  for (let value of values) {
+    sum += value;
   }
-
-  return Array.from(map.values());
+  return sum;
 }
-
-let arr = ["nap", "teachers", "cheaters", "PAN", "ear", "era", "hectares"];
-
-alert(aclean(arr));
