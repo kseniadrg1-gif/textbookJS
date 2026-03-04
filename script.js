@@ -1,10 +1,2 @@
-let user = {
-  name: "John",
-  years: 30,
-};
-
-let { name, years: age, isAdmin = false } = user;
-
-alert(name);
-alert(age);
-alert(isAdmin);
+let user = { name: "Василий Иванович", age: 35 };
+let user2 = JSON.parse(JSON.stringify(user));
