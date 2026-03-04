@@ -1,8 +1,10 @@
-function sumSalaries(salaries) {
-  sum = 0;
-  let values = Object.values(salaries);
-  for (let value of values) {
-    sum += value;
-  }
-  return sum;
-}
+let user = {
+  name: "John",
+  years: 30,
+};
+
+let { name, years: age, isAdmin = false } = user;
+
+alert(name);
+alert(age);
+alert(isAdmin);
