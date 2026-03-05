@@ -1,4 +1,4 @@
 for (a = 1; a <= 100; a++)
-  if (a % 2 === 0) {
+  if (a % 3 === 0) {
     console.log(a);
   }
