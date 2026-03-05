@@ -1,3 +1,3 @@
-for (a = -100; 0 >= a; a++) {
-  console.log(a);
+for (let a = 100; a >= 1; a--) {
+  alert(a);
 }
