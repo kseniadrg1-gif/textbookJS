@@ -1,7 +1,3 @@
-let str1 = prompt("Введи первое слово");
-let str2 = prompt("Введи второе слово");
-if (str1.at(0) === str2.at(0)) {
-  alert("Первые символы двух строк равны");
-} else {
-  alert("Первые символы двух строк не равны");
-}
+let number = prompt("Введи число, узнай его 1 цифру");
+let firstDigit = number.at(0);
+alert(firstDigit);
