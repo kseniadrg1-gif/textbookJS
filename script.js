@@ -1,2 +1,2 @@
-let text = prompt("Введи строку");
-alert(text.length);
+let text = prompt("Введи строку, узнай последний символ");
+alert(text.at(-1));
