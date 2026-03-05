@@ -1,3 +1,3 @@
-let number = prompt("Введи число, узнай его 1 цифру");
-let firstDigit = number.at(0);
+let number = prompt("Введи число, узнай его последнюю цифру");
+let firstDigit = number.at(-1);
 alert(firstDigit);
