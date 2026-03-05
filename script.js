@@ -1,2 +1,6 @@
-let text = prompt("Введи строку, узнай последний символ");
-alert(text.at(-1));
+let number = parseInt(prompt("Введи чило, узнай четное оно или нечетное"));
+if (number % 2 === 0) {
+  alert("Четное");
+} else {
+  alert("Нечетное");
+}
