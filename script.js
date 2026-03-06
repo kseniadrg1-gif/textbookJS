@@ -1,3 +1,3 @@
 let number = 12345;
-let arr = String(number).split("");
-alert(arr);
+let reversed = Number(number.toString().split("").reverse().join(""));
+console.log(reversed);
