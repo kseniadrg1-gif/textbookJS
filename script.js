@@ -1,3 +1,8 @@
 let number = 12345;
-let reversed = Number(number.toString().split("").reverse().join(""));
-console.log(reversed);
+let sum = 0;
+
+for (let digit of String(number)) {
+  sum += Number(digit);
+}
+
+console.log(sum);
