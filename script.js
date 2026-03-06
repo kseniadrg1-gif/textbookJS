@@ -1,3 +1,3 @@
-let str = "abcde";
-let arr = str.split("");
+let number = 12345;
+let arr = String(number).split("");
 alert(arr);
