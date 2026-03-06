@@ -1,4 +1,5 @@
-for (a = 1; a <= 100; a++)
-  if (a % 3 === 0) {
-    console.log(a);
-  }
+sum = 0;
+for (a = 1; a <= 100; a++) {
+  sum = sum + a;
+}
+console.log(sum);
