@@ -1,4 +1,4 @@
-a = prompt("Введите первое число");
-b = prompt("Введите второе число");
-c = Number(a) % Number(b);
-alert(c);
+let text = prompt("Введите строку");
+for (let i = text.length - 1; i >= 0; i--) {
+  alert(text[i]);
+}
