@@ -1,8 +1,5 @@
-let number = 12345;
-let sum = 0;
-
-for (let digit of String(number)) {
-  sum += Number(digit);
+arr = [];
+for (i = 1; i <= 10; i++) {
+  arr.push(i);
 }
-
-console.log(sum);
+console.log(arr);
