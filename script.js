@@ -1,13 +1,10 @@
-function makeCounter() {
-  let count = 0;
-
-  function counter() {
-    return count++;
-  }
-
-  counter.set = (value) => (count = value);
-
-  counter.decrease = () => count--;
-
-  return counter;
+function printNumbers(from, to) {
+  let current = from;
+  let timerId = setInterval(function () {
+    console.log(current);
+    if (current == to) {
+      clearInterval(timerId);
+    }
+    current++;
+  }, 1000);
 }
